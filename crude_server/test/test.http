@@ -1,0 +1,45 @@
+###
+POST http://localhost:8080/create
+Content-Type: application/json
+
+{
+  "value": 3,
+  "description": "description"
+}
+
+###
+POST http://localhost:8080/update
+Content-Type: application/json
+
+{
+  "id": 1,
+  "value": 5,
+  "description": "description"
+}
+
+###
+POST http://localhost:8080/delete
+Content-Type: application/json
+
+{
+  "id": 3
+}
+
+###
+POST http://localhost:8080/get
+Content-Type: application/json
+
+{
+  "id": 1
+}
+
+###
+POST http://localhost:8080/list
+Content-Type: application/json
+
+{
+  "offset": 0,
+  "limit": 5,
+  "fromValue": 0,
+  "toValue": 100
+}
