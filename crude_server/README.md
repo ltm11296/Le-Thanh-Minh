@@ -2,12 +2,12 @@
 
 This simple crude server requires [Node.js](https://nodejs.org/) v22.14.0, docker to run.
 
-Install the database server
+Run the MySQL database server
 
 ```sh
 docker run --name mysql_container -e MYSQL_ROOT_PASSWORD=root -d -p 3306:3306 mysql --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
 ```
-After run database server, log in with user root, password root and create schema code_challenge, run below sql to create example table
+After run MySQL database server, log in with user root, password root and create schema code_challenge, run below sql to create example table
 
 ```sh
 create table EXAMPLE
